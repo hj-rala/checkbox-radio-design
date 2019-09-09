@@ -1,4 +1,24 @@
-<script type="text/javascript" src="js/customInput.jquery.js"></script>
+<style>
+/* checkbox, radio */
+/* wrapper divs */
+.custom-checkbox, .custom-radio {position: relative; z-index:1;}
+.custom-checkbox label.empty {padding-left:26px;}
+.custom-radio label.empty {padding-left:26px;}
+/* input, label positioning */
+.custom-checkbox input, .custom-radio input {margin:0; z-index:0; height:0; width:0;}
+.custom-checkbox label, .custom-radio label {display:inline-block; position:relative; z-index:1; cursor:pointer; font-size:16px; color:#272d32; font-weight:400; padding-left:28px; line-height:20px;}
+/* states */
+.custom-checkbox label {background:url('img/ico_checkbox.png') 0 -105px no-repeat; }
+.custom-radio label {background:url('img/ico_checkbox.png') no-repeat;}
+.custom-checkbox label.checked {background-position:0 -157px;}
+.custom-radio label.checked {background-position:0 -52px;}
+</style>
+
+
+
+
+
+
 
 <div class="itSt">
 	<input type="checkbox" id="ch1" /><label for="ch1">ch1</label>
@@ -11,7 +31,7 @@
 </div>
 
 
-
+<script type="text/javascript" src="js/customInput.jquery.js"></script>
 <script type="text/javascript">
 $(function(){
 
